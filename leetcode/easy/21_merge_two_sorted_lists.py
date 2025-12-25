@@ -20,4 +20,31 @@ class ListNode:
     self.next = next
       
 def merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-  d
+  # EDGES
+  if not list1:
+      return list2
+  if not list2:
+      return list1
+  
+  # Get first node of each list, anchor on which list having smaller head.
+  i, j = (list1, list2) if list1.val <= list2.val else (list2, list1)
+  head = i
+  
+  '''
+  Maintain pointers i, j of list1 and list2.
+  Keep moving 
+  if node i < node j
+      if node i <= node j < node i+1. Change:
+          * i.next = j
+          * set list2 = j.next
+          * j.next = i + 1
+      if node i+1 < node j
+          keep shift node i and j to the right
+  '''
+  while i and j:
+      while i.next and i.next.val <= j.val:
+          i = i.next
+      i.next, i, j = j, j, i.next
+  
+  
+  return head
