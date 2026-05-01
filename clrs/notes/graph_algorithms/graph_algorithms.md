@@ -20,12 +20,12 @@ All about basic graph data structure and its related algorithms:
 
 ### 1.2 Adjacency Matrix
 - $|V| \times |V|$ matrix $A = (a_{ij})$:
-$$
+```math
 a_{ij} = \begin{cases}
     1 & \text{if } (i, j) \in E \\
     0 & \text{otherwise}
 \end{cases}
-$$
+```
   - can store $w(u,v)$ instead of 1 for **weighted graphs**.
   - 0 can also be NIL or $\infin$
 - Complexity:
