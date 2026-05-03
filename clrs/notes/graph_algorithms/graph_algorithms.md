@@ -38,4 +38,20 @@ a_{ij} = \begin{cases}
 
 ## 2. Elementary Graph Algorithms
 
+### 2.1 Breadth-First Search (BFS)
+Given a graph $G=(V,E)$, and a source vertex $s$. From $s$, how to discover every other vertex by exploring edges of $G$.
+
+BFS uses a **queue** to track vertices, containing two consecutive waves at any time (i.e., some vertices at a distance $k$, followed by some vertices at distance $k+1$).
+
+BFS uses **colours** (white, gray, black) to keep track of progress.
+- **White**: not reachable from $s$.
+- **Gray**: first time discovered from $s$, now becoming the *frontier* of the search. -> The queue contains all gray vertices.
+- **Black**: once all edges of a gray vertex are explored -> It becomes black.
+
+**Breadth-First Tree** is a tree with root $s$, in which the path from $s$ to $v$ is the shortest path in $G$.
+
+Whenerver the search discovers a white vertex $v$ in the course of scanning the adjacency list of a gray vertex $u$, the vertex $v$ and the edge $(u, v)$ are added to the tree.
+
+### 2.2 Depth-First Search (DFS)
+
 ------------------------------

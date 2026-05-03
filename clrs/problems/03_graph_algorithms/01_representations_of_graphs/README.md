@@ -120,3 +120,26 @@ SQUARE_GRAPH(G=(V, E)):                     # O(|V|^3)
                     if E[j][w] == 1:
                         E_squared[i][w] = 1 
 ```
+
+---------------------------
+
+## 20.1-6
+> Most graph algorithms that take an adjacency-matrix representation as input require $\Omega(V^2)$ time, but there are some exceptions. Show how to determine whether a directed graph $G$ contains a **universal sink** - a vertex with in-degree $|V| - 1$ and out-degree 0 - in $O(V)$ time, given an adjacency matrix for $G$.
+
+---------------------------
+
+## 20.1-7
+> The **incidence matrix** of a directed graph $G=(V,E)$ with no self-loops is a $|V|\times |E|$ matrix $B=(b_{ij})$ such that
+> ```math
+> b_{ij} = \begin{cases}
+>   -1 \text{ if edge } j \text{ leaves vertex } i, \\
+>   1 \text{ if edge } j \text{ enters vertex } i, \\
+>   0 \text{ otherwise}
+> \end{cases}
+> ```
+> Describe what the entries of the matrix product $BB^T$ represent, where $B^T$ is the transpose of B.
+
+---------------------------
+
+## 20.1-8
+> Suppose that instead of a linked list, each array entry $\text{Adj}[u]$ is a hash table containing the vertices $v$ for which $(u,v) \in E$, which collisions resolved by chaining. Under the assumption of uniform independent hashing, if all edge lookups are equally likely, what is the expected time to determine whether an edge is in the graph? What disadvantages does this scheme have? Suggest an alternate data structure for each edge list that solves these problems. Does you alternative have disadvantages compared with the hash table?
