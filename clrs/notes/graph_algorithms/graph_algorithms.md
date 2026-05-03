@@ -52,6 +52,39 @@ BFS uses **colours** (white, gray, black) to keep track of progress.
 
 Whenerver the search discovers a white vertex $v$ in the course of scanning the adjacency list of a gray vertex $u$, the vertex $v$ and the edge $(u, v)$ are added to the tree.
 
+$v \in V$ has attributes:
+- $v.colour$
+- $v.d$: distance from $s$ to $v$
+- $v.\pi$: predecessor of $v$ in the breadth-first tree ($=\text{NIL}$ if $v$ has no predecessor)
+
+BFS Algorithm for adjacency-list graphs
+```python
+BFS(G, s):  # O(V + E)
+  for each vertex u in G.V - {s}:
+    u.colour = WHITE
+    u.d = ∞
+    u.𝛑 = NIL
+  
+  s.colour = GRAY
+  s.d = 0
+  s.𝛑 = NIL
+  ENQUEUE(Q, s)
+
+  while Q ≠ ∅:
+    u = DEQUEUE(Q)  # O(V)
+    for each vertex v in G.Adj[u]:  # search neighbours of u - O(V + E)
+      if v.colour == WHITE:
+        v.colour = GRAY
+        v.d = u.d + 1
+        v.𝛑 = u
+        ENQUEUE(Q, v) # v is on the frontier
+    u.colour = BLACK  # u is behind the frontier
+```
+
+#### 2.1.1 Shortest Paths
+
+#### 2.1.2 Breadth-First Trees
+
 ### 2.2 Depth-First Search (DFS)
 
 ------------------------------
