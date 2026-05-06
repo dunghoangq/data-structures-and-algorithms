@@ -86,5 +86,43 @@ BFS(G, s):  # O(V + E)
 #### 2.1.2 Breadth-First Trees
 
 ### 2.2 Depth-First Search (DFS)
+Unlike BFS - trying to find widely - DFS tries to go deeper. That's why DFS is not used to solve Shortest Path problems. Instead, applications of DFS include:
+- Topological Sort
 
+In BFS, predecessor subgraph of vertex v is a single tree, but there multiple **depth-first trees** forming **depth-first forest** for DFS:
+```math
+E_{\pi} = \{ (v.\pi, v): v \in V \text{ and } v.\pi \neq \text{NIL} \}
+```
+
+DFS vertex has colour, $\pi$ like BFS. The difference is DFS tracks timestamps:
+- $v.d$: Discover time
+- $v.f$: Finish time
+
+The reason DFS doesn't store distance from source to destination vertex because in BFS, we try to find in breadth mode, every vertex discovered in the shortest path as possible. But in DFS, we care about how many steps it takes to get from source $s$ to a vertex $v$.
+
+```python
+DFS(G):
+  for vertex u in G.V:
+    u.colour = WHITE
+    u.pi = NIL
+  time = 0
+
+  for vertex u in G.V:
+    if u.colour == WHITE:
+      DFS_VISIT(G, u)
+
+DFS_VISIT(G, u):
+  time = time + 1
+  u.d = time
+  u.colour = GRAY
+
+  for vertex v in G.Adj[u]:
+    if v.colour == WHITE:
+      v.pi = u
+      DFS_VISIT(G, v)
+
+  time = time + 1
+  u.f = time
+  u.colour = BLACK
+```
 ------------------------------
