@@ -153,6 +153,72 @@ PRINT_CUT_ROD_SOLUTION(p, n):
 
 ## 2. Matrix-Chain Multiplication
 
+**Problem**
+
+Multiply $n$ rectangular matrices $A_1...A_n$, for $A_i \in \mathbb{R}^{p_{i-1}\times p_i}$.
+
+Costly based on Scalar Multiplication. If $A\in\mathbb{R}^{p\times q}, B\in\mathbb{R}^{q\times r}$, then the multiplication cost is $p\times q \times r$.
+
+For $n=4$, there are 5 ways to parenthesise the product
+
+```math
+(A_1(A2(A_3 A_4))), \\
+(A_1((A_2 A_3)A_4)), \\
+((A_1 A_2)(A_3 A_4)), \\
+((A_1(A_2 A_3))A_4), \\
+(((A_1 A_2)A_3)A_4)
+```
+
+**Structure**
+
+$(A_1...A_k A_{k+1}...A_n)$ is the multiplications of all subproducts. A pair of parentheses splits a product -> 2 subproducts between $k^{th}$ and $(k+1)^{th}$ matrices. -> Compute $A_{1:k}$ and $A_{k+1:n}$.
+
+**Invariant**
+
+Given an optimal parenthesisation $A_iA_{i+1}...A_j$, a split between $A_k$ and $A_{k+1}$ divides it into prefix subchain $A_i...A_k$ and suffix subchain $A_{k+1}...A_j$ are also optimal. Because if there's a less costly way to compute $A_i...A_k$, we replace it to have a less costly $A_i...A_j$. So the original one is not optimal anymore.
+
+**Data Structure**
+
+Min cost $A_i...A_j$ for $1 \leq i \leq j \leq n$, demension array $[p_0, p_1,...p_n]$.
+
+Store multiplication costs in a $2\times 2$ matrix $m[1:n, 1:n]$.
+- $i=j$ -> $m[i,j]=0$
+- $i < j$ -> $\min\{m[i,j] = m[i,k] + m[k+1,j] + p_{i-1}p_kp_j: i \leq k < j\}$
+
+**Using DP**
+
+To rebuild the parenthesised matrix multiplication, we also need an auxiliary table $s[1:n-1,2:n]$
+
+```python
+MATRIX_CHAIN_ORDER(p, n):
+    let m[1:n, 1:n] and s[1:n-1, 2:n] new tables
+
+    for i = 1 to n:
+        m[i,i] = 0
+    for l = 2 to n: # chain length
+        for i = 1 to n - l + 1: # start matrix A_i
+            j = i + l - 1   # end matrix A_j
+            m[i, j] = inf
+            for k = 1 to j - 1:
+                q = m[i,k] + m[k+1, j] + p[i-1]*p[k]*p[j]
+                if q < m[i,j]:
+                    m[i, j] = q
+                    s[i, j] = k
+    return m, s
+```
+
+To construct the optimal solution
+
+```python
+PRINT_OPTIMAL_PARENS(s, i, j):
+    if i == j:
+        print "A_i"
+    else:
+        print "("
+            PRINT_OPTIMAL_PARENS(s, i, s[i,j])
+            PRINT_OPTIMAL_PARENS(s, s[i,j]+1, j)
+        print ")"
+```
 
 ------------------------------
 
