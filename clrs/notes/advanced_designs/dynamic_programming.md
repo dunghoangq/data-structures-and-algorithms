@@ -224,6 +224,11 @@ PRINT_OPTIMAL_PARENS(s, i, j):
 
 ## 3. DP's Elements
 
+- Optimal Substructure
+- Overlapping Subproblems
+- Reconstruct
+- Recursion (for bottom-up)
+- Memoisation (for top-down)
 
 ------------------------------
 
