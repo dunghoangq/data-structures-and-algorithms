@@ -234,6 +234,68 @@ PRINT_OPTIMAL_PARENS(s, i, j):
 
 ## 4. Longest Common Subsequence
 
+Compare two strands of DNA $S_1$ and $S_2$ consisting of bases $\{ A,C,G,T \}$. -> Longest Common Subsequence (LCS).
+
+**Structure + Invariant**
+
+> Theorem 14.1 (Optimal substructure of an LCS). Let $X = [x_1, x_2,..., x_m]$ and $Y = [y_1, y_2,...,y_n]$, and $Z = [z_1, z_2,...,z_k]$ be any LCS of X and Y
+> 1. If $x_m = y_n = z_k$ -> $Z_{k-1}$ is an LCS of $x_{m-1}$ and $y_{n-1}$.
+> 2. If $x_m \neq y_n$ and $z_k \neq x_m$ -> Z is an LCS of $X_{m-1}$ and Y.
+> 3. If $x_m \neq y_n$ and $z_k \neq y_n$ -> Z is an LCS of X and $Y_{n-1}$.
+
+Formula:
+
+```math
+c[i,j] = \begin{cases}
+    0   & \text{if } i = 0 \text{ or } j = 0 \\
+    c[i-1,j-1] + 1 & \text{if } i,j > 0, x_i = y_j \\
+    \max{\{ c[i,j-1], c[i-1,j] \}} & \text{if } i,j > 0, x_i \neq y_j
+\end{cases}
+```
+
+
+**DP**
+
+```python
+LCS_LENGTH(X, Y, m, n):
+    let b[1:m, 1:n] and c[0:m, 0:n] new tables
+
+    for i = 1 to m:
+        c[i, 0] = 0
+
+    for j = 1 to n:
+        c[0, j] = 0
+
+    for i = 1 to m:
+        for j = 1 to n:
+            if X[i] == Y[j]:
+                c[i, j] = c[i-1, j-1] + 1
+                b[i, j] = "left-up"
+            elif c[i-1, j] >= c[i, j-1]:
+                c[i, j] = c[i-1, j]
+                b[i, j] = "up"
+            else:
+                c[i, j] = c[i, j-1]
+                b[i, j] = "left"
+    return c, b
+```
+
+To rebuild the LCS
+
+```python
+PRINT_LCS(b, X, i, j):
+    if i == j == 0:
+        return None
+    if b[i, j] == "left-up":
+        PRINT_LCS(b, X, i-1, j-1)
+        print X[i]
+    elif b[i, j] == "up":
+        PRINT_LCS(b, X, i-1, j)
+    else:
+        PRINT_LCS(b, X, i, j-1)
+```
+
+
 
 ------------------------------
 
