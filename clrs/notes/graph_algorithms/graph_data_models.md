@@ -116,3 +116,19 @@ WITH RECURSIVE
         ON V.VERTEX_ID = E.VERTEX_ID
 ;
 ```
+
+-----------------------------------
+
+## 4. SPARQL
+
+More concise than Cypher
+
+```sparql
+PREFIX : <urn:example:>
+
+SELECT ?personName WHERE {
+    ?person :name   ?personName.
+    ?person :bornIn  / :within* / :name "United States".
+    ?person :livesIn / :within* / :name "Europe".
+}
+```
