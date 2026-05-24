@@ -119,9 +119,11 @@ WITH RECURSIVE
 
 -----------------------------------
 
-## 4. SPARQL
+## 4. SPARQL and Triple-Stores
 
-More concise than Cypher
+> *(subject, predicate, object)*.
+More concise than Cypher.
+
 
 ```sparql
 PREFIX : <urn:example:>
@@ -131,4 +133,48 @@ SELECT ?personName WHERE {
     ?person :bornIn  / :within* / :name "United States".
     ?person :livesIn / :within* / :name "Europe".
 }
+```
+
+## 5. Datalog
+
+Datalog was studied in 1980s, and not being used anymore.
+But it's still important as it's the foundation of later query languages (Datomic, Cascalog).
+
+> *predicate(subject, object)*
+
+Database
+
+```datalog
+name(namerica, 'North America').
+type(namerica, continent).
+
+name(usa, 'United States').
+type(usa, country).
+within(usa, namerica).
+
+name(idaho, 'Idaho').
+type(idaho, state).
+within(idaho, usa).
+
+name(lucy, 'Lucy').
+born_in(lucy, idaho).
+```
+
+Query
+
+```datalog
+within_recursive(Location, Name) :- name(Location, Name).   /* Rule 1 */
+
+within_recursive(Location, Name) :- within(Locatin, Via),   /* Rule 2 */
+                                    within_recursive(Via, Name).
+
+migrated(Name, BornIn, LivingIn) :- name(Person, Name),     /* Rule 3 */
+                                    born_in(Person, BornLoc),
+                                    within_recursive(BornLoc, BornIn),
+                                    lives_in(Person, LivingLoc),
+                                    within_recursive(LivingLoc, LivingIn).
+
+?- migrated(Who, 'United States', 'Europe').
+
+/* Who = 'Lucy'. */
 ```
