@@ -55,3 +55,27 @@ GREEDY_ACT_SELECTOR(s, f, n)
     
     return A
 ```
+
+## 2. Elements of Greedy Strategy
+
+### 2.1 Linear Thinking
+
+Steps with DP:
+1. Determine the optimal substructure of the problem.
+2. Develop a recursive solution.
+3. Show that if you make the greedy choice, only subproblem remains.
+4. Prove that it is always safe to make the greedy choice.
+5. Develop a recursive algo that implement the greedy strategy.
+6. Convert the recursive algo to an iterative algo.
+
+Design Greedy algo steps:
+1. Cast the optimisation problem, make a choice, left with one subproblem to solve.
+2. Prove that there's always an optimal solution with greedy.
+3. Demonstrate optimal substructure by showing that, it remains a subproblem that if combined with the subproblem created by greedy, conclude the optimal solution to the original problem.
+
+### 2.2 Property
+
+- Locally optimal -> Globally optimal
+- In top-down manner (while DP can be either top-down or bottom-up)
+- Make the best choice at a moment, don't care to solve subproblems.
+- Also has optimal substructure (like DP)
