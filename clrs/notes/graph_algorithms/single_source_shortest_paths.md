@@ -51,3 +51,27 @@ BELLMAN_FORD(G, w, s)
     
     return TRUE
 ```
+
+## 3. Dijkstra's Algorithm
+
+- BFS on weighted graphs
+
+```python
+DIJKSTRA(G, w, s)
+    INITIALISE_SINGLE_SOURCE(G, s)
+
+    S = ∅
+    Q = ∅
+
+    for each vertex u in G.V:
+        INSERT(Q, u)
+
+    while Q != ∅:
+        u = EXTRACT_MIN(Q)
+        S = S ∪ {u}
+
+        for each vertex v in G.Adj[u]:
+            RELAX(u, v, w)
+            if the call of RELAX decreased v.d:
+                DECREASE_KEY(Q, v, v.d)
+```
