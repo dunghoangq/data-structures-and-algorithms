@@ -22,11 +22,18 @@
 | [367_valid_perfect_square](binary_search/367_valid_perfect_square) | <font color='seagreen'>EASY</font> |
 | [374_guess_number_higher_or_lower](binary_search/374_guess_number_higher_or_lower) | <font color='seagreen'>EASY</font> |
 
+## DFS
+
+| Problem | Difficulty |
+|---------|------------|
+| [94_binary_tree_inorder_traversal](dfs/94_binary_tree_inorder_traversal) | <font color='seagreen'>EASY</font> |
+
 ## Divide and Conquer
 
 | Problem | Difficulty |
 |---------|------------|
 | [108_convert_sorted_array_to_bst](divide_and_conquer/108_convert_sorted_array_to_bst) | <font color='seagreen'>EASY</font> |
+| [112_path_sum](dfs/112_path_sum) | <font color='seagreen'>EASY</font> |
 
 ## Dynamic Programming
 
