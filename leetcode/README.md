@@ -8,6 +8,7 @@
 | [101_symmetric_tree](.bfs/101_symmetric_tree) | <font color='seagreen'>EASY</font> |
 | [102_binary_tree_level_order_traversal](.bfs/102_binary_tree_level_order_traversal) | <font color='orange'>MED.</font> |
 | [104_maxtimum_depth_of_binary_tree](.bfs/104_maxtimum_depth_of_binary_tree) | <font color='seagreen'>EASY</font> |
+| [111_minimum_depth_of_binary_tree](.bfs/111_minimum_depth_of_binary_tree) | <font color='seagreen'>EASY</font> |
 
 ## Binary Search
 
