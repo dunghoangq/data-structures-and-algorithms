@@ -44,6 +44,9 @@
 | [338_counting_bits](dynamic_programming/338_counting_bits) | <font color='seagreen'>EASY</font> |
 | [392_is_subsequence](dynamic_programming/392_is_subsequence) | <font color='seagreen'>EASY</font> |
 | [509_fibonacci_number](dynamic_programming/509_fibonacci_number) | <font color='seagreen'>EASY</font> |
+| [746_min_cost_climbing_stairs](dynamic_programming/746_min_cost_climbing_stairs) | <font color='seagreen'>EASY</font> |
+| [1025_divisor_game](dynamic_programming/1025_divisor_game) | <font color='seagreen'>EASY</font> |
+| [1137_nth_tribonacci_number](dynamic_programming/1137_nth_tribonacci_number) | <font color='seagreen'>EASY</font> |
 
 ## Greedy
 
