@@ -47,6 +47,9 @@
 | [746_min_cost_climbing_stairs](dynamic_programming/746_min_cost_climbing_stairs) | <font color='seagreen'>EASY</font> |
 | [1025_divisor_game](dynamic_programming/1025_divisor_game) | <font color='seagreen'>EASY</font> |
 | [1137_nth_tribonacci_number](dynamic_programming/1137_nth_tribonacci_number) | <font color='seagreen'>EASY</font> |
+| [1668_maximum_repeating_substring](dynamic_programming/1668_maximum_repeating_substring) | <font color='seagreen'>EASY</font> |
+| [2900_longest_unequal_adjacent_groups_subsequenc](dynamic_programming/2900_longest_unequal_adjacent_groups_subsequenc) | <font color='seagreen'>EASY</font> |
+| [3954_sum_of_compatible_numbers_in_range_i](dynamic_programming/3954_sum_of_compatible_numbers_in_range_i) | <font color='seagreen'>EASY</font> |
 
 ## Greedy
 
