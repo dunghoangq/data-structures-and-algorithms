@@ -7,8 +7,11 @@
 | [100_same_tree](bfs/100_same_tree/) | <font color='seagreen'>EASY</font> |
 | [101_symmetric_tree](bfs/101_symmetric_tree) | <font color='seagreen'>EASY</font> |
 | [102_binary_tree_level_order_traversal](bfs/102_binary_tree_level_order_traversal) | <font color='orange'>MED.</font> |
+| [103_binary_tree_zigzag_level_order_traversal](bfs/103_binary_tree_zigzag_level_order_traversal) | <font color='orange'>MED.</font> |
 | [104_maxtimum_depth_of_binary_tree](bfs/104_maxtimum_depth_of_binary_tree) | <font color='seagreen'>EASY</font> |
+| [107_binary_tree_level_order_traversal_ii](bfs/107_binary_tree_level_order_traversal_ii) | <font color='orange'>MED.</font> |
 | [111_minimum_depth_of_binary_tree](bfs/111_minimum_depth_of_binary_tree) | <font color='seagreen'>EASY</font> |
+| [116_populating_next_right_pointers_in_each_node](bfs/116_populating_next_right_pointers_in_each_node) | <font color='orange'>MED.</font> |
 
 ## Binary Search
 
