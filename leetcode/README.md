@@ -57,3 +57,6 @@
 |---------|------------|
 | [409_longest_palindrome](greedy_algo/409_longest_palindrome) | <font color='seagreen'>EASY</font> |
 | [455_assign_cookies](greedy_algo/455_assign_cookies) | <font color='seagreen'>EASY</font> |
+| [561_array_partition](greedy_algo/561_array_partition) | <font color='seagreen'>EASY</font> |
+| [605_can_place_flowers](greedy_algo/605_can_place_flowers) | <font color='seagreen'>EASY</font> |
+| [860_lemonade_change](greedy_algo/860_lemonade_change) | <font color='seagreen'>EASY</font> |
