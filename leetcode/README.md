@@ -60,3 +60,5 @@
 | [561_array_partition](greedy_algo/561_array_partition) | <font color='seagreen'>EASY</font> |
 | [605_can_place_flowers](greedy_algo/605_can_place_flowers) | <font color='seagreen'>EASY</font> |
 | [860_lemonade_change](greedy_algo/860_lemonade_change) | <font color='seagreen'>EASY</font> |
+| [942_di_string_match](greedy_algo/942_di_string_match) | <font color='seagreen'>EASY</font> |
+| [976_largest_perimeter_triangle](greedy_algo/976_largest_perimeter_triangle) | <font color='seagreen'>EASY</font> |
