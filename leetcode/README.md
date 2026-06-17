@@ -12,6 +12,7 @@
 | [107_binary_tree_level_order_traversal_ii](bfs/107_binary_tree_level_order_traversal_ii) | <font color='orange'>MED.</font> |
 | [111_minimum_depth_of_binary_tree](bfs/111_minimum_depth_of_binary_tree) | <font color='seagreen'>EASY</font> |
 | [116_populating_next_right_pointers_in_each_node](bfs/116_populating_next_right_pointers_in_each_node) | <font color='orange'>MED.</font> |
+| [226_invert_binary_tree](bfs/226_invert_binary_tree) | <font color='seagreen'>EASY</font> |
 
 ## Binary Search
 
@@ -34,6 +35,9 @@
 | [110_balanced_binary_tree](dfs/110_balanced_binary_tree) | <font color='seagreen'>EASY</font> |
 | [144_binary_tree_preorder_traversal](dfs/144_binary_tree_preorder_traversal) | <font color='seagreen'>EASY</font> |
 | [145_binary_tree_postorder_traversal](dfs/145_binary_tree_postorder_traversal) | <font color='seagreen'>EASY</font> |
+| [257_binary_tree_paths](dfs/257_binary_tree_paths) | <font color='seagreen'>EASY</font> |
+| [501_find_mode_in_binary_search_tree](dfs/501_find_mode_in_binary_search_tree) | <font color='seagreen'>EASY</font> |
+| [543_diameter_of_binary_tree](dfs/543_diameter_of_binary_tree) | <font color='seagreen'>EASY</font> |
 
 ## Divide and Conquer
 
