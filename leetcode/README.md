@@ -74,3 +74,6 @@
 | [860_lemonade_change](greedy_algo/860_lemonade_change) | <font color='seagreen'>EASY</font> |
 | [942_di_string_match](greedy_algo/942_di_string_match) | <font color='seagreen'>EASY</font> |
 | [976_largest_perimeter_triangle](greedy_algo/976_largest_perimeter_triangle) | <font color='seagreen'>EASY</font> |
+| [1005_maximise_sum_of_array_after_k_negations](greedy_algo/1005_maximise_sum_of_array_after_k_negations) | <font color='seagreen'>EASY</font> |
+| [1013_parttition_array_into_three_parts_with_equal_sum](greedy_algo/1013_parttition_array_into_three_parts_with_equal_sum) | <font color='seagreen'>EASY</font> |
+| [1217_minimum_cost_to_move_chips_to_the_same_position](greedy_algo/1217_minimum_cost_to_move_chips_to_the_same_position) | <font color='seagreen'>EASY</font> |
