@@ -66,6 +66,8 @@
 
 | Problem | Difficulty |
 |---------|------------|
+| [11_container_with_most_water](greedy_algo/11_container_with_most_water) | <font color='orange'>MED.</font> |
+| [45_jump_game_ii](greedy_algo/45_jump_game_ii) | <font color='orange'>MED.</font> |
 | [409_longest_palindrome](greedy_algo/409_longest_palindrome) | <font color='seagreen'>EASY</font> |
 | [455_assign_cookies](greedy_algo/455_assign_cookies) | <font color='seagreen'>EASY</font> |
 | [561_array_partition](greedy_algo/561_array_partition) | <font color='seagreen'>EASY</font> |
@@ -77,3 +79,6 @@
 | [1005_maximise_sum_of_array_after_k_negations](greedy_algo/1005_maximise_sum_of_array_after_k_negations) | <font color='seagreen'>EASY</font> |
 | [1013_parttition_array_into_three_parts_with_equal_sum](greedy_algo/1013_parttition_array_into_three_parts_with_equal_sum) | <font color='seagreen'>EASY</font> |
 | [1217_minimum_cost_to_move_chips_to_the_same_position](greedy_algo/1217_minimum_cost_to_move_chips_to_the_same_position) | <font color='seagreen'>EASY</font> |
+| [1221_split_a_string_in_balanced_strings](greedy_algo/1221_split_a_string_in_balanced_strings) | <font color='seagreen'>EASY</font> |
+| [1323_maximum_69_number](greedy_algo/1323_maximum_69_number) | <font color='seagreen'>EASY</font> |
+| [1403_minimum_subsequence_in_nonincreasing_order](greedy_algo/1403_minimum_subsequence_in_nonincreasing_order) | <font color='seagreen'>EASY</font> |
