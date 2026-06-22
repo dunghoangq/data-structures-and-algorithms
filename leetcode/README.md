@@ -32,6 +32,7 @@
 |---------|------------|
 | [79_word_search](dfs/79_word_search) | <font color='orange'>MED.</font> |
 | [94_binary_tree_inorder_traversal](dfs/94_binary_tree_inorder_traversal) | <font color='seagreen'>EASY</font> |
+| [98_validate_binary_search_tree](dfs/98_validate_binary_search_tree) | <font color='orange'>MED.</font> |
 | [110_balanced_binary_tree](dfs/110_balanced_binary_tree) | <font color='seagreen'>EASY</font> |
 | [144_binary_tree_preorder_traversal](dfs/144_binary_tree_preorder_traversal) | <font color='seagreen'>EASY</font> |
 | [145_binary_tree_postorder_traversal](dfs/145_binary_tree_postorder_traversal) | <font color='seagreen'>EASY</font> |
