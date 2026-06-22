@@ -24,47 +24,99 @@ Output: false
 
 ALGORITHM
 
+Dfs
+- Time: O(m*n)
+- Space: O(1)
+
+DFS(row, col, visited, word_index)
+    if word_index == word.length - 1
+        return true
+
+    temp = visited[row][col]
+    visited[row][col] = 1
+    neighbours = [up, down, left, right]
+
+    for (x, y) in neighbours
+        if board[x][y] == word[word_index + 1] and (x, y) not in visited
+            if DFS(x, y, visited, word_index + 1)
+                return true
+    
+    visited[row][col] = temp
+    return false
+
 EXIST(board, word)
     m = board.length
     n = board[0].length
-    p = word.length
 
-    stack = []
-
-    // Init sources
-    for i = 0 to m-1
-        for j = 0 to n-1
+    visited = [[]] size (m, n)
+    for i = 0 to m - 1
+        for j = 0 to n - 1
             if board[i][j] == word[0]
-                stack.top((i,j))
-    if stack is empty
-        return false
+                DFS(i, j, visited, 0)
+
     
-    states = [[0 * n] * m]
-    
-    // DFS
-    while stack not empty
-        c = 0 // pointer to point to each character in word
-        node = stack.back
-        c++
-        neighbours = [
-            (node[0] - 1, node[1]), // up
-            (node[0] + 1, node[1]), // down
-            (node[0], node[1] - 1), // left
-            (node[0], node[1] + 1)  // right
-        ]
-        
-        for neighbour in neibours
-            i = neighbour[0]
-            j = neighbour[1]
-            if 0 <= i <= m-1 and 0 <= j <= n - 1
-                if board[i][j] == word[c] and states[i][j] == 0
-                    stack.top((i, j))
-
-
-COMPLEXITY
-
-- Time: 
-- Space: 
-
-
 */
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <array>
+#include <algorithm>
+#include <utility>
+
+bool dfs(int row, int col, int row_num, int col_num, std::vector<std::vector<char>>& board, std::string& word, int word_idx) {
+    if (word_idx == word.size() - 1) return true;
+
+    char temp = board[row][col];
+    board[row][col] = '#';
+
+    int d_row[] = {-1, 1, 0, 0};
+    int d_col[] = {0, 0, -1, 1};
+
+    for (int d = 0; d < 4; d++) {
+        int nei_row = row + d_row[d];
+        int nei_col = col + d_col[d];
+
+        if (nei_row >= 0 && nei_row < row_num && nei_col >= 0 && nei_col < col_num) {
+            if (board[nei_row][nei_col] == word[word_idx + 1]) {
+                if (dfs(nei_row, nei_col, row_num, col_num, board, word, word_idx + 1)) {
+                    board[row][col] = temp;
+                    return true;
+                }  
+            }
+        }
+    }
+
+    board[row][col] = temp;
+    return false;
+}
+
+bool exist(std::vector<std::vector<char>>& board, std::string word) {
+    int m = board.size();
+    int n = board[0].size(); 
+
+    if (m * n < word.size()) return false;
+
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (board[i][j] == word[0]) {
+                if (dfs(i, j, m, n, board, word, 0))
+                    return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+int main() {
+    std::vector<std::vector<char>> board = {
+        {'A', 'B', 'C', 'E'},
+        {'S', 'F', 'C', 'S'},
+        {'A', 'D', 'E', 'E'}
+    };
+    std::cout << exist(board, "ABCCED") << "\n"; // true
+    std::cout << exist(board, "ABCB") << "\n"; // false
+
+    return 0;
+}
