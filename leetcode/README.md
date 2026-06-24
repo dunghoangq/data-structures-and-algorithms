@@ -13,6 +13,8 @@
 | [111_minimum_depth_of_binary_tree](bfs/111_minimum_depth_of_binary_tree) | <font color='seagreen'>EASY</font> |
 | [116_populating_next_right_pointers_in_each_node](bfs/116_populating_next_right_pointers_in_each_node) | <font color='orange'>MED.</font> |
 | [226_invert_binary_tree](bfs/226_invert_binary_tree) | <font color='seagreen'>EASY</font> |
+| [404_sum_of_left_leaves](bfs/404_sum_of_left_leaves) | <font color='seagreen'>EASY</font> |
+| [463_island_perimeter](bfs/463_island_perimeter) | <font color='seagreen'>EASY</font> |
 
 ## Binary Search
 
