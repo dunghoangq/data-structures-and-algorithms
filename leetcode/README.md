@@ -33,12 +33,14 @@
 | [79_word_search](dfs/79_word_search) | <font color='orange'>MED.</font> |
 | [94_binary_tree_inorder_traversal](dfs/94_binary_tree_inorder_traversal) | <font color='seagreen'>EASY</font> |
 | [98_validate_binary_search_tree](dfs/98_validate_binary_search_tree) | <font color='orange'>MED.</font> |
+| [TBD][99_recover_binary_search_tree](dfs/99_recover_binary_search_tree) | <font color='orange'>MED.</font> cd 99 |
 | [110_balanced_binary_tree](dfs/110_balanced_binary_tree) | <font color='seagreen'>EASY</font> |
 | [144_binary_tree_preorder_traversal](dfs/144_binary_tree_preorder_traversal) | <font color='seagreen'>EASY</font> |
 | [145_binary_tree_postorder_traversal](dfs/145_binary_tree_postorder_traversal) | <font color='seagreen'>EASY</font> |
 | [257_binary_tree_paths](dfs/257_binary_tree_paths) | <font color='seagreen'>EASY</font> |
 | [501_find_mode_in_binary_search_tree](dfs/501_find_mode_in_binary_search_tree) | <font color='seagreen'>EASY</font> |
 | [543_diameter_of_binary_tree](dfs/543_diameter_of_binary_tree) | <font color='seagreen'>EASY</font> |
+| [1022_sum_of_root_to_leaf_binary_numbers](dfs/1022_sum_of_root_to_leaf_binary_numbers) | <font color='seagreen'>EASY</font> |
 
 ## Divide and Conquer
 
