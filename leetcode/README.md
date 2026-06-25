@@ -87,3 +87,4 @@
 | [1221_split_a_string_in_balanced_strings](greedy_algo/1221_split_a_string_in_balanced_strings) | <font color='seagreen'>EASY</font> |
 | [1323_maximum_69_number](greedy_algo/1323_maximum_69_number) | <font color='seagreen'>EASY</font> |
 | [1403_minimum_subsequence_in_nonincreasing_order](greedy_algo/1403_minimum_subsequence_in_nonincreasing_order) | <font color='seagreen'>EASY</font> |
+| [1710_maximum_units_on_a_truck](greedy_algo/1710_maximum_units_on_a_truck) | <font color='seagreen'>EASY</font> |
