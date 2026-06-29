@@ -52,6 +52,7 @@
 | [108_convert_sorted_array_to_bst](divide_and_conquer/108_convert_sorted_array_to_bst) | <font color='seagreen'>EASY</font> |
 | [169_majority_element](divide_and_conquer/169_majority_element) | <font color='seagreen'>EASY</font> |
 | [190_reverse_bits](divide_and_conquer/190_reverse_bits) | <font color='seagreen'>EASY</font> |
+| [191_number_of_1_bits](divide_and_conquer/191_number_of_1_bits) | <font color='seagreen'>EASY</font> |
 
 ## Dynamic Programming
 
