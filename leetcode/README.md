@@ -92,3 +92,7 @@
 | [1323_maximum_69_number](greedy_algo/1323_maximum_69_number) | <font color='seagreen'>EASY</font> |
 | [1403_minimum_subsequence_in_nonincreasing_order](greedy_algo/1403_minimum_subsequence_in_nonincreasing_order) | <font color='seagreen'>EASY</font> |
 | [1710_maximum_units_on_a_truck](greedy_algo/1710_maximum_units_on_a_truck) | <font color='seagreen'>EASY</font> |
+| [1736_latest_time_by_replacing_hidden_digits](greedy_algo/1736_latest_time_by_replacing_hidden_digits) | <font color='seagreen'>EASY</font> |
+| [1827_minimum_operations_to_make_the_array_increasing](greedy_algo/1827_minimum_operations_to_make_the_array_increasing) | <font color='seagreen'>EASY</font> |
+| [1903_largest_odd_number_in_string](greedy_algo/1903_largest_odd_number_in_string) | <font color='seagreen'>EASY</font> |
+| [1974_minimum_time_to_type_word_using_special_typewriter](greedy_algo/1974_minimum_time_to_type_word_using_special_typewriter) | <font color='seagreen'>EASY</font> |
