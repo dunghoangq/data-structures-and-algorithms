@@ -60,6 +60,7 @@
 |---------|------------|
 | [5_longest_palindromic_substring](dynamic_programming/5_longest_palindromic_substring) | <font color='orange'>MED.</font> |
 | [22_generate_parentheses](dynamic_programming/22_generate_parentheses) | <font color='orange'>MED.</font> |
+| [55_jump_game](dynamic_programming/55_jump_game) | <font color='orange'>MED.</font> |
 | [119_pascals_triangle_ii](dynamic_programming/119_pascals_triangle_ii) | <font color='seagreen'>EASY</font> |
 | [121_best_time_to_buy_and_sell_stock](dynamic_programming/121_best_time_to_buy_and_sell_stock) | <font color='seagreen'>EASY</font> |
 | [338_counting_bits](dynamic_programming/338_counting_bits) | <font color='seagreen'>EASY</font> |
