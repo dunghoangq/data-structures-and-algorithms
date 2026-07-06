@@ -26,13 +26,14 @@ Dfs
 - Time: 
 - Space: 
 
-INORDER_TRAVERSAL(root, order)
+INORDER-TRAVERSAL(root, order)
     if root == NULL
         return
     
     INORDER_TRAVERSAL(root.left)
     order.append(root)
     INORDER_TRAVERSAL(root.right)
+
 
 RECOVER_TREE
     order = []
@@ -42,22 +43,56 @@ RECOVER_TREE
         return
     
     n = order.length
-    node1_idx
-    node2_idx
+    node1
+    node2
 
-    for i = 0 to n - 1
-        if order[i].val < order[i +1].val
-            i++
-        else
-            node1_idx = i+1
-            break
+    for i = 1 ... n - 1
+        if order[i - 1].val < order[i].val
+            continue
+        else if !node1
+            node1 = order[i-1]
+        node2 = order[i]
     
-    for j = n - 1 to 0
-        if order[j].val > order[j-1].val
-            j--
-        else
-            node2_idx = j-1
-            break
-
+    SWAP(node1.val, node2.val)
     
 */
+
+#include <iostream>
+#include <vector>
+#include <utility>
+
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
+};
+
+void inorder_traversal(TreeNode* root, std::vector<TreeNode*>& order) {
+    if (!root) return;
+
+    inorder_traversal(root->left, order);
+    order.push_back(root);
+    inorder_traversal(root->right, order);
+}
+
+void recoverTree(TreeNode* root) {
+    std::vector<TreeNode*> order;
+    inorder_traversal(root, order);
+
+    if (order.size() <= 1) return;
+
+    TreeNode* node1;
+    TreeNode* node2;
+
+    for (int i = 1; i < order.size(); i++) {
+        if (order[i - 1]->val < order[i]->val) continue;
+        else if (!node1) node1 = order[i - 1];
+        node2 = order[i];
+    }
+
+    std::swap(node1->val, node2->val);
+    return;
+}
