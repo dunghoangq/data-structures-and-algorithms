@@ -83,6 +83,7 @@
 | [122_best_time_to_buy_and_sell_stock_ii](greedy_algo/122_best_time_to_buy_and_sell_stock_ii) | <font color='orange'>MED.</font> |
 | [134_gas_station](greedy_algo/134_gas_station) | <font color='orange'>MED.</font> |
 | [179_largest_number](greedy_algo/179_largest_number) | <font color='orange'>MED.</font> |
+| [316_remove_duplicate_letters](greedy_algo/316_remove_duplicate_letters) | <font color='orange'>MED.</font> |
 | [409_longest_palindrome](greedy_algo/409_longest_palindrome) | <font color='seagreen'>EASY</font> |
 | [455_assign_cookies](greedy_algo/455_assign_cookies) | <font color='seagreen'>EASY</font> |
 | [561_array_partition](greedy_algo/561_array_partition) | <font color='seagreen'>EASY</font> |
