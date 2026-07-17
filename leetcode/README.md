@@ -53,6 +53,7 @@
 | [169_majority_element](divide_and_conquer/169_majority_element) | <font color='seagreen'>EASY</font> |
 | [190_reverse_bits](divide_and_conquer/190_reverse_bits) | <font color='seagreen'>EASY</font> |
 | [191_number_of_1_bits](divide_and_conquer/191_number_of_1_bits) | <font color='seagreen'>EASY</font> |
+| [1763_longest_nice_substring](divide_and_conquer/1763_longest_nice_substring) | <font color='seagreen'>EASY</font> |
 
 ## Dynamic Programming
 
@@ -105,3 +106,5 @@
 | [1827_minimum_operations_to_make_the_array_increasing](greedy_algo/1827_minimum_operations_to_make_the_array_increasing) | <font color='seagreen'>EASY</font> |
 | [1903_largest_odd_number_in_string](greedy_algo/1903_largest_odd_number_in_string) | <font color='seagreen'>EASY</font> |
 | [1974_minimum_time_to_type_word_using_special_typewriter](greedy_algo/1974_minimum_time_to_type_word_using_special_typewriter) | <font color='seagreen'>EASY</font> |
+| [2027_minimum_moves_to_convert_string](greedy_algo/2027_minimum_moves_to_convert_string) | <font color='seagreen'>EASY</font> |
+| [2037_min_number_of_moves_to_seat_everyone](greedy_algo/2037_min_number_of_moves_to_seat_everyone) | <font color='seagreen'>EASY</font> |
