@@ -108,3 +108,5 @@
 | [1974_minimum_time_to_type_word_using_special_typewriter](greedy_algo/1974_minimum_time_to_type_word_using_special_typewriter) | <font color='seagreen'>EASY</font> |
 | [2027_minimum_moves_to_convert_string](greedy_algo/2027_minimum_moves_to_convert_string) | <font color='seagreen'>EASY</font> |
 | [2037_min_number_of_moves_to_seat_everyone](greedy_algo/2037_min_number_of_moves_to_seat_everyone) | <font color='seagreen'>EASY</font> |
+| [2078_two_furthest_houses_with_different_colours](greedy_algo/2078_two_furthest_houses_with_different_colours) | <font color='seagreen'>EASY</font> |
+| [2144_min_cost_of_buying_candies_with_discount](greedy_algo/2144_min_cost_of_buying_candies_with_discount) | <font color='seagreen'>EASY</font> |
