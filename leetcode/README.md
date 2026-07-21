@@ -110,3 +110,6 @@
 | [2037_min_number_of_moves_to_seat_everyone](greedy_algo/2037_min_number_of_moves_to_seat_everyone) | <font color='seagreen'>EASY</font> |
 | [2078_two_furthest_houses_with_different_colours](greedy_algo/2078_two_furthest_houses_with_different_colours) | <font color='seagreen'>EASY</font> |
 | [2144_min_cost_of_buying_candies_with_discount](greedy_algo/2144_min_cost_of_buying_candies_with_discount) | <font color='seagreen'>EASY</font> |
+| [2160_min_sum_of_four_digit_number_after_splitting](greedy_algo/2160_min_sum_of_four_digit_number_after_splitting) | <font color='seagreen'>EASY</font> |
+| [2224_min_num_operations_to_convert_time](greedy_algo/2224_min_num_operations_to_convert_time) | <font color='seagreen'>EASY</font> |
+| [2259_remove_digit_from_number_to_maximise_result](greedy_algo/2259_remove_digit_from_number_to_maximise_result) | <font color='seagreen'>EASY</font> |
