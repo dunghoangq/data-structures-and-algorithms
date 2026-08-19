@@ -8,6 +8,7 @@
 | [88_merge_sorted_array](array/88_merge_sorted_array) | <font color='seagreen'>EASY</font> |
 | [136_single_number](array/136_single_number/) | <font color='seagreen'>EASY</font> |
 | [217_contains_duplicate](array/217_contains_duplicate) | <font color='seagreen'>EASY</font> |
+| [219_contains_duplicate_ii](array/219_contains_duplicate_ii) | <font color='seagreen'>EASY</font> |
 
 ## bfs
 
