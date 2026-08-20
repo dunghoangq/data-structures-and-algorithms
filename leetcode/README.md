@@ -48,6 +48,8 @@
 | [99_recover_binary_search_tree](dfs/99_recover_binary_search_tree) | <font color='orange'>MED.</font> cd 99 |
 | [110_balanced_binary_tree](dfs/110_balanced_binary_tree) | <font color='seagreen'>EASY</font> |
 | [112_path_sum](dfs/112_path_sum) | <font color='seagreen'>EASY</font> |
+| [113_path_sum_ii](dfs/113_path_sum_ii) | <font color='orange'>MED.</font> |
+| [114_flatten_binary_tree_to_linked_list](dfs/114_flatten_binary_tree_to_linked_list) | <font color='orange'>MED.</font> |
 | [144_binary_tree_preorder_traversal](dfs/144_binary_tree_preorder_traversal) | <font color='seagreen'>EASY</font> |
 | [145_binary_tree_postorder_traversal](dfs/145_binary_tree_postorder_traversal) | <font color='seagreen'>EASY</font> |
 | [257_binary_tree_paths](dfs/257_binary_tree_paths) | <font color='seagreen'>EASY</font> |
