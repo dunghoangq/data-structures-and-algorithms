@@ -5,6 +5,7 @@
 | Problem | Difficulty |
 |---------|------------|
 | [15_3sum](array/15_3sum) | <font color='orange'>MED.</font> |
+| [16_3sum_closest](array/16_3sum_closest) | <font color='orange'>MED.</font> |
 | [27_remove_element](array/27_remove_element/) | <font color='seagreen'>EASY</font> |
 | [88_merge_sorted_array](array/88_merge_sorted_array) | <font color='seagreen'>EASY</font> |
 | [136_single_number](array/136_single_number/) | <font color='seagreen'>EASY</font> |
