@@ -32,6 +32,7 @@
 
 | Problem | Difficulty |
 |---------|------------|
+| [33_search_in_rotated_sorted_array](binary_search/33_search_in_rotated_sorted_array) | <font color='orange'>MED.</font> |
 | [35_search_insert_position](binary_search/35_search_insert_position) | <font color='seagreen'>EASY</font> |
 | [222_count_completee_tree_nodes](binary_search/222_count_completee_tree_nodes) | <font color='seagreen'>EASY</font> |
 | [268_missing_number](binary_search/268_missing_number) | <font color='seagreen'>EASY</font> |
